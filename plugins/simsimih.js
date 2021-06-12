@@ -9,7 +9,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 
 // Description
-const BOT_DESC = "Chat with an AI Bot.\n Use .bot <message>"
+const BOT_DESC = "Chat with an AI Bot.\n Use .dee <message>"
 const BOT = ":"
 const NOT_FOUNDAC = "*Invaild Request*"
 const NEED_LOCATIONA = "*Invaild Request*"
