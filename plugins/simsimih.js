@@ -14,7 +14,7 @@ const BOT = ":"
 const NOT_FOUNDAC = "*Invaild Request*"
 const NEED_LOCATIONA = "*Invaild Request*"
 
-Asena.addCommand({pattern: 'bot ?(.*)', fromMe: false, desc: BOT_DESC}, async (message, match) => {
+Asena.addCommand({pattern: 'dee ?(.*)', fromMe: false, desc: BOT_DESC}, async (message, match) => {
 	if (match[1] === 'xx') return await message.reply(NEED_LOCATIONA);
 	const url = `https://api.simsimi.net/v1/?text=${match[1]}&lang=en&cf=true`;
 	try {
