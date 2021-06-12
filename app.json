@@ -1,15 +1,15 @@
 {
-    "name": "WhatsAsenaPublic",
-    "description": "WhatsAsenaPublic - Made By TOXIC DEVIL.",
-    "logo": "https://i.ibb.co/9H56Ct5/20210305-083215.jpg",
+    "name": "baby-bot",
+    "description": "babybot - Made By CYBER KALLAN.",
+    "logo": "https://i.ibb.co/BP42czK/Pics-Art-05-04-12-16-19.png",
     "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/TOXIC-DEVIL/WhatsAsenaPublic",
+    "repository": "https://github.com/imarjunarz/BABY-BOT",
     "website":   "https://t.me/phaticusthiccy",
     "success_url": "https://t.me/AsenaSupport",
     "stack": "container",
     "env": {
         "ASENA_SESSION": {
-            "description": "Type here yours Asena Session [ Paste The Code Starting With Asena;;; ].",
+            "description": "Type here yours babybot Session [ Paste The Code Starting With Asena;;; ].",
             "required": true
         },
         "SUDO": {
