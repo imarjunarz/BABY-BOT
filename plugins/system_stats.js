@@ -1,6 +1,6 @@
 /* Copyright (C) 2020 TOXIC DEVIL
 
-CODDED BY TOXIC DEVIL
+CODDED BY CYBERKALLAN
 
 Licensed under the  GPL-3.0 License;
 
@@ -21,7 +21,7 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    Asena.addCommand({pattern: 'Moluse', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'moluse', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
@@ -53,7 +53,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Asena.addCommand({pattern: 'Moluse', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Asena.addCommand({pattern: 'moluse', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
