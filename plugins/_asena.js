@@ -26,9 +26,9 @@ if (Config.WORKTYPE == 'private') {
         if (match[1] === '') {
             Asena.commands.map(
                 async (command) =>  {
-                    if (command.dontAddCommandList || command.pattern === undefined) return;
+                    if (command.dontAddCommandList ||Â command.pattern === undefined) return;
                     try {
-                        var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
+                        var match = command.pattern.toString().match(/(\W*)([A-Za-zÄŸÃ¼ÅŸiÃ¶Ã§1234567890]*)/);
                     } catch {
                         var match = [command.pattern];
                     }
@@ -40,16 +40,16 @@ if (Config.WORKTYPE == 'private') {
                     } else {
                         HANDLER = '.';
                     }
-                    CMD_HELP += '*🎯 ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
-                    if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
-                    if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
-                    if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
+                    CMD_HELP += '*ðŸŽ¯ ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
+                    if (command.desc !== '') CMD_HELP += '*ðŸ“ ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
+                    if (command.usage !== '') CMD_HELP += '*âŒ¨ï¸ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                    if (command.warn !== '') CMD_HELP += '*âš ï¸ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
 
                 }
             );
         
             await message.client.sendMessage(
-                message.jid,'◄1�7 *Baby Bot Private By Cyberkallan* ●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'â—„1¤7 *Baby Bot Private By Cyberkallan* â—\n\n' + CMD_HELP, MessageType.text
             );    
         } else {
 
@@ -60,9 +60,9 @@ if (Config.WORKTYPE == 'private') {
             var CMD_HELP = '';
             Asena.commands.map(
                 async (command) =>  {
-                    if (command.dontAddCommandList || command.pattern === undefined) return;
+                    if (command.dontAddCommandList ||Â command.pattern === undefined) return;
                     try {
-                        var cmatch = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
+                        var cmatch = command.pattern.toString().match(/(\W*)([A-Za-zÄŸÃ¼ÅŸiÃ¶Ã§1234567890]*)/);
                     } catch {
                         var cmatch = [command.pattern];
                     }
@@ -75,17 +75,17 @@ if (Config.WORKTYPE == 'private') {
                         } else {
                             HANDLER = '.';
                         }
-                        CMD_HELP += '*🎯 ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
-                        if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
-                        if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
-                        if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
+                        CMD_HELP += '*ðŸŽ¯ ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
+                        if (command.desc !== '') CMD_HELP += '*ðŸ“ ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
+                        if (command.usage !== '') CMD_HELP += '*âŒ¨ï¸ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                        if (command.warn !== '') CMD_HELP += '*âš ï¸ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
 
                     }
                 }
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'◄1�7 *Baby Bot Private By Cyberkallan* ●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'â—„1¤7 *Baby Bot Private By Cyberkallan* â—\n\n' + CMD_HELP, MessageType.text
             );
         }
     }));
@@ -103,9 +103,9 @@ else if (Config.WORKTYPE == 'public') {
         if (match[1] === '') {
             Asena.commands.map(
                 async (command) =>  {
-                    if (command.dontAddCommandList || command.pattern === undefined) return;
+                    if (command.dontAddCommandList ||Â command.pattern === undefined) return;
                     try {
-                        var match = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
+                        var match = command.pattern.toString().match(/(\W*)([A-Za-zÄŸÃ¼ÅŸiÃ¶Ã§1234567890]*)/);
                     } catch {
                         var match = [command.pattern];
                     }
@@ -117,16 +117,16 @@ else if (Config.WORKTYPE == 'public') {
                     } else {
                         HANDLER = '.';
                     }
-                    CMD_HELP += '*🎯 ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
-                    if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
-                    if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
-                    if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
+                    CMD_HELP += '*ðŸŽ¯ ' + Lang.COMMAND + ':* ```' + (match.length >= 3 ? (HANDLER + match[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
+                    if (command.desc !== '') CMD_HELP += '*ðŸ“ ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
+                    if (command.usage !== '') CMD_HELP += '*âŒ¨ï¸ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                    if (command.warn !== '') CMD_HELP += '*âš ï¸ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
 
                 }
             );
         
             await message.client.sendMessage(
-                message.jid,'◄1�7 *Baby Bot By CyberKallan* ●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'â—„🧕 *Baby Bot By CyberKallan* â—\n\n' + CMD_HELP, MessageType.text
             );    
         } else {
 
@@ -137,9 +137,9 @@ else if (Config.WORKTYPE == 'public') {
             var CMD_HELP = '';
             Asena.commands.map(
                 async (command) =>  {
-                    if (command.dontAddCommandList || command.pattern === undefined) return;
+                    if (command.dontAddCommandList ||Â command.pattern === undefined) return;
                     try {
-                        var cmatch = command.pattern.toString().match(/(\W*)([A-Za-zğüşiöç1234567890]*)/);
+                        var cmatch = command.pattern.toString().match(/(\W*)([A-Za-zÄŸÃ¼ÅŸiÃ¶Ã§1234567890]*)/);
                     } catch {
                         var cmatch = [command.pattern];
                     }
@@ -152,17 +152,17 @@ else if (Config.WORKTYPE == 'public') {
                         } else {
                             HANDLER = '.';
                         }
-                        CMD_HELP += '*🎯 ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
-                        if (command.desc !== '') CMD_HELP += '*📝 ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
-                        if (command.usage !== '') CMD_HELP += '*⌨️ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
-                        if (command.warn !== '') CMD_HELP += '*⚠️ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
+                        CMD_HELP += '*ðŸŽ¯ ' + Lang.COMMAND + ':* ```' + (cmatch.length >= 3 ? (HANDLER + cmatch[2]) : command.pattern) + (command.desc === '' ? '```\n\n' : '```\n');
+                        if (command.desc !== '') CMD_HELP += '*ðŸ“ ' + Lang.DESC + ':* ```' + command.desc + (command.warn === '' ? '```\n\n' : '```\n');
+                        if (command.usage !== '') CMD_HELP += '*âŒ¨ï¸ ' + Lang.EXAMPLE + ':* ```' + command.usage + '```\n\n';
+                        if (command.warn !== '') CMD_HELP += '*âš ï¸ ' + Lang.WARN + ':* ```' + command.warn + '```\n\n';
 
                     }
                 }
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'◄1�7 *Baby Bot By CyberKallan* ●\n\n' + CMD_HELP, MessageType.text
+                message.jid,'â—„🧕 *Baby Bot By CyberKallan* â—\n\n' + CMD_HELP, MessageType.text
             );
         }
     }));
